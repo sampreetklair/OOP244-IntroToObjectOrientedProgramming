@@ -1,0 +1,10 @@
+main_prof.cpp: In function ‘void transfer(sdds::Train&, const sdds::Train&)’:
+main_prof.cpp:73:22: error: no matching function for call to ‘sdds::Train::transfer(const sdds::Train&)’
+  if(!to.transfer(from)) {
+                      ^
+main_prof.cpp:73:22: note: candidate is:
+In file included from main_prof.cpp:15:0:
+Train.h:37:14: note: bool sdds::Train::transfer(sdds::Train&)
+         bool transfer(Train& otherTrain);
+              ^
+Train.h:37:14: note:   no known conversion for argument 1 from ‘const sdds::Train’ to ‘sdds::Train&’
